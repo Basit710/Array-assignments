@@ -1,0 +1,23 @@
+/*Abdul Basit(18),bscs1(D)*/
+#include<iostream>
+using namespace std;
+int main()
+{
+    int arr[10], add;
+    add=0;
+    cout<<"enter 10 values for array :";
+    for(int i=0; i<=9; i++)
+        cin>>arr[i];
+    for(int i=0; i<=9; i++)
+    {
+        if(i==2) {
+            continue;
+        }
+        else if(i==4) {
+            continue;
+        }
+        add=add+arr[i];
+    }
+    cout<<"sum of array values after skipping values at index 3 & 5 :"<<add;
+    return 0;
+}
